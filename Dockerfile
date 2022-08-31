@@ -1,7 +1,7 @@
 FROM rastasheep/ubuntu-sshd:18.04
 
 # Buildroot version to use
-ARG BUILD_ROOT_RELEASE=2021.02-rc2
+ARG BUILD_ROOT_RELEASE=2022.05.1
 # Root password for SSH
 ARG ROOT_PASSWORD=browser-vm
 
@@ -40,7 +40,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get -q -y install \
 # configure the locales
 ENV LANG='C' \
     LANGUAGE='en_US:en' \
-    LC_ALL='C' \ 
+    LC_ALL='C' \
     NOTVISIBLE="in users profile" \
     TERM=xterm
 
